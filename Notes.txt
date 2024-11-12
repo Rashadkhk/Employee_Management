@@ -1,0 +1,76 @@
+Tables and Relationships
+
+<<Employee>>
+PK ID
+name
+surname
+email
+FK department_id
+FK position_id
+status
+created_at
+updated_at
+
+<<Dept>>
+PK ID
+name
+created_at
+updated_at
+
+<<Position>>
+PK ID
+name
+salary
+created_at
+updated_at
+FK department_id 
+
+####################################
+
+USER
+1. User register
+2. User login
+
+EMPLOYEE
+1. Employee save
+2. Employee get one
+3. Employee get all
+4. Employee edit
+5. Employee delete
+
+DEPARTMENT
+1. Department save
+2. Department get one
+3. Department get all
+4. Department edit
+5. Department delete
+
+POSITION
+1. Position save
+2. Position get one
+3. Position get all
+4. Position edit
+5. Position delete
+
+####################################
+
+1. Browser
+	1. Register - http://127.0.0.1:8000/api/register/
+	2. Admin - http://127.0.0.1:8000/admin/core/
+	3. Swagger - http://127.0.0.1:8000/swagger/
+	4. Login - http://127.0.0.1:8000/api/login/
+2. Postman
+1. Departments:
+	1. GET – 
+		1. http://127.0.0.1:8000/api/departments/
+		2. http://127.0.0.1:8000/api/departments/?lang=az
+		3. http://127.0.0.1:8000/api/departments/1/
+		4. http://127.0.0.1:8000/api/departments/1/?lang=az
+	1. POST – 
+		1. http://127.0.0.1:8000/api/departments/
+		2. http://127.0.0.1:8000/api/departments/?lang=az
+		3. http://127.0.0.1:8000/api/departments/1/
+		4. http://127.0.0.1:8000/api/departments/1/?lang=az
+
+
+
